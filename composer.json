@@ -1,5 +1,5 @@
 {
-    "name": "sioukam/twitter",
+    "name": "sioukam/known-twitter",
     "type": "known-plugin",
     "description": "Cross-post site content to Twitter. Contains Matt Harris's <a href=\"https://github.com/themattharris/tmhOAuth\">Twitter library</a>, released under the Apache 2.0 license.",
     "version": "1.0.0",
