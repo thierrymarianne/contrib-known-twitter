@@ -451,7 +451,9 @@
                 if (!$twitterAPI) {
                     return '';
                 }
-                $code       = $twitterAPI->request('POST', $twitterAPI->url('oauth/request_token', ''), array('oauth_callback' => \Idno\Core\Idno::site()->config()->getDisplayURL() . 'twitter/callback', 'x_auth_access_type' => 'write'));
+                $code       = $twitterAPI->request('POST', $twitterAPI->url('oauth/request_token', ''),
+                    ['oauth_callback' => 'https://thierry.sioukam.re/twitter/callback', 'x_auth_access_type' => 'write']
+                );
                 if ($code == 200) {
                     $oauth = $twitterAPI->extract_params($twitterAPI->response['response']);
                     \Idno\Core\Idno::site()->session()->set('oauth', $oauth); // Save OAuth to the session
