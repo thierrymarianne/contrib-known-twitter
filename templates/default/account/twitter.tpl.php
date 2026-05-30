@@ -33,7 +33,7 @@
                     
                     <div class="social">
 				     <p>
-                     <a href="<?= $vars['oauth_url'] ?>" class="tw connect"><i class="fab fa-twitter"></i>
+                     <a href="<?= $vars['oauth_url'] ?>" class="tw connect"><i class="fa fa-twitter"></i>
  <?= \Idno\Core\Idno::site()->language()->_('Connect Twitter'); ?></a>
                      </p>
 					</div>
@@ -61,7 +61,7 @@
 						<div class="social">
                           <p>
                               <input type="hidden" name="remove" value="1" class="form-control" />
-                              <button type="submit" class="tw connect connected"><i class="fab fa-twitter"></i>
+                              <button type="submit" class="tw connect connected"><i class="fa fa-twitter"></i>
  <?= \Idno\Core\Idno::site()->language()->_('Disconnect Twitter'); ?></button>
                           </p>
 						</div>
@@ -97,7 +97,7 @@
                                                 <p>
                                                     <input type="hidden" name="remove" class="form-control" value="<?= $account['username'] ?>"/>
                                                     <button type="submit"
-                                                            class="tw connect connected"><i class="fab fa-twitter"></i>
+                                                            class="tw connect connected"><i class="fa fa-twitter"></i>
  @<?= $account['username'] ?> (<?= \Idno\Core\Idno::site()->language()->_('Disconnect'); ?>)</button>
                                                 </p>
                                                 </div>
